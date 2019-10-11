@@ -1,0 +1,712 @@
+fontRegular = ProximaNovaRegular
+fontBold = ProximaNovaBold
+fontLight = ProximaNovaLight
+colorWhite = #ffffff
+colorBlack = #282828
+colorRed = #ef4129
+colorGrey = #494957
+colorLightGrey = #72787a
+colorDarkGrey = #2a2d2e
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px)
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+
+  .work-step-wrapper
+    &:nth-of-type(1)
+    &:nth-of-type(3)
+      .work-step
+        &:after
+          top 125px
+          right 16px
+          background-size 64px
+          width 64px
+          height 16px
+    &:nth-of-type(3)
+      .work-step
+        &:after
+          top -46px
+
+  .swiper-app-pagination
+    &.swiper-pagination-bullets
+      bottom 25%
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+  .header-phone
+    margin-right 36px
+
+  .app-option
+    max-width 400px
+    margin auto
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 960px)
+  body
+    font-size 15px
+
+  .container
+    max-width 865px
+    padding 0
+
+  header
+  .header
+    padding 17px 23px 15px 48px
+
+  .header-logo
+    max-width 126px
+    margin-right 36px
+
+  .header-phone
+    font-size 18px
+    margin-right 46px
+
+  .link-order
+    font-size 19px
+
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+    height 407px
+    padding-bottom 36px
+
+  .top-title
+    font-size 43px
+    margin-bottom 10px
+
+  .top-text
+    font-size 15px
+    margin-bottom 25px
+
+  .btn
+    font-size 19px
+    width 191px
+    padding 14px
+    border-radius 4px
+
+  .set
+    margin-top 40px
+    align-items center
+
+  .set-title
+    height 35px
+    margin 0
+
+  .divider
+    height 1px
+    width 90%
+    margin 24px 0
+
+  .set-description
+    font-size 15px
+    line-height 1.34
+    margin-bottom 20px
+
+  .set-prices
+    margin-bottom 0
+
+  .small
+    font-size 11px
+
+  .prices-group
+    font-size 15px
+    line-height 1.5
+    > div
+      padding-left 0
+
+  .price
+    font-size 29px
+    padding-top 0
+
+  .sign-rouble
+    font-size 27px
+
+  .set-img
+    width 100%
+    max-width 420px
+    margin-bottom 24px
+
+  .screen-work-top
+    padding-top 90px
+
+  .screen-work-bottom
+    padding 40px 0 20px
+
+  .arrow-up
+    top -20px
+    &.arrow-up-center
+      left 0
+      right 0
+    &.arrow-up-left
+      left 17%
+    &.arrow-up-right
+      right 17%
+
+  .work-steps
+    flex-direction row
+    width 80%
+    margin auto
+    padding 20px 0 45px
+
+  .work-step
+    align-items center
+    justify-content center
+    width 118px
+    height 118px
+    font-size 64px
+    color colorWhite
+    cursor pointer
+    background #c8c8c8
+    &:nth-of-type(1)
+    &:nth-of-type(3)
+      &:after
+        content ""
+        position absolute
+        top calc(50% - 22px/2)
+        right calc(-94px - 38px)
+        background url("../assets/images/icons/arrow.png") no-repeat center
+        background-size 94px
+        width 94px
+        height 22px
+        transform none
+    &:nth-of-type(3)
+      &:after
+        left calc(-94px - 38px)
+
+  .work-number
+    font-size 53px
+    margin-right 25px
+
+  .work-text
+    font-size 15px
+    line-height 1.18
+    margin-left 0
+    & + .small
+      margin 20px 0 0
+
+  .nav-prev
+  .nav-next
+    position absolute
+    top 10%
+    width 20px
+    height 38px
+    cursor pointer
+    outline none
+
+  .nav-prev
+    background url("../assets/images/icons/arrow_prev.png") no-repeat center
+    background-size contain
+    left -60px
+
+  .nav-next
+    background url("../assets/images/icons/arrow_next.png") no-repeat center
+    background-size contain
+    right -60px
+
+  .title
+    font-size 37px
+
+  .screen-app
+    padding 75px 0 50px
+
+  .app-text
+    font-size 15px
+
+  .store-badge
+    height 31px
+
+  .app
+    margin 35px 0 20px
+    &>[class*="col-"]
+      padding 0
+
+  .app-option
+    max-width none
+    position relative
+    font-size 15px
+    line-height 1.133
+    text-align left
+    margin-bottom 18px
+    margin-top 0
+    height 5.5em
+    overflow hidden
+
+  .option-sticker
+    display inline-block
+    font-size 13px
+    color colorWhite
+    text-transform uppercase
+    background colorRed
+    border-radius 2px
+    margin-left 7px
+    padding 2px 4px
+
+  .screen-callback
+    background #f3f3f3
+    padding 30px 0 50px
+    .title
+      margin-bottom 30px
+
+  .callback-text
+    font-size 15px
+    line-height 1.38
+    margin-bottom 25px
+
+  .form-small
+    font-size 13px
+    margin-top 0
+
+  .form-group
+    margin-bottom 20px
+
+  .form-control
+    height 39px
+    font-size 14px
+    padding 10px 20px
+
+  .btn-form
+    margin-top 30px
+
+  footer
+  .footer
+    padding 28px 0 60px
+
+  .footer-top
+    padding-bottom 26px
+    margin-bottom 36px
+    margin-top 0
+    border-bottom 2px solid rgba(255,255,255,0.2)
+    text-align right
+
+  .footer-logo
+    display inline-block
+    max-width 104px
+    margin-right 56px
+
+  .social
+    margin 0 -4px
+
+  .social-icon
+    width 25px
+    margin 0 4px
+
+  .footer-phone
+    font-size 15px
+    margin-right 16px
+    margin-bottom 0
+
+  .footer-text
+    display inline-block
+    font-size 10px
+    opacity 0.4
+
+  .modal-xl
+    max-width 76.67%
+
+  button.close
+    top 32px
+    right 32px
+    width 15px
+    height 15px
+
+  .modal-body
+    padding 0 0 40px
+
+  .item-wrapper
+    width 100%
+
+  .tab-items
+    height 272px
+
+  .item-img
+    max-height 265px
+    margin-bottom 0
+
+  .item-title
+    font-size 18px
+    margin-bottom 12px
+
+  .item-description
+    font-size 14px
+
+  .item-thumbnails
+    margin-top 0
+
+  .item-thumbnail
+    width 86px
+    height 86px
+    padding 12px
+    margin 8px
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+  body
+    font-size 24px
+
+  .container
+    max-width 1688px
+    padding 0 14px
+
+  .row
+    margin-left -14px
+    margin-right -14px
+
+  [class*="col-"]
+    padding-left 14px
+    padding-right 14px
+
+  header
+  .header
+    padding 30px 50px 30px 90px
+
+  .header-logo
+    max-width 234px
+    margin-right 72px
+
+  .header-phone
+    font-size 33px
+    margin-right 85px
+
+  .link-order
+    font-size 33px
+
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+    height 764px
+    padding-bottom 134px
+
+  .top-title
+    font-size 69px
+    margin-bottom 20px
+
+  .top-text
+    font-size 25px
+    margin-bottom 50px
+
+  .btn
+    font-size 29px
+    width 291px
+    padding 20px
+    border-radius 6px
+
+  .set
+    margin-top 112px
+
+  .set-title-wrapper
+    display inline-block
+
+  .set-title
+    height 52px
+    margin 0
+
+  .divider
+    height 1px
+    width 90%
+    margin 40px 0
+
+  .set-description
+    font-size 22px
+    line-height 1.375
+    margin-bottom 26px
+
+  .set-prices
+    margin-bottom 0
+
+  .small
+    font-size 17px
+
+  .prices-group
+    font-size 23px
+    line-height 1.5
+    > div
+      padding 0
+
+  .price
+    font-size 44px
+    padding-top 15px
+
+  .sign-rouble
+    font-size 42px
+
+  .set-img
+    width 100%
+    max-width 800px
+    margin-bottom 24px
+
+  .screen-work-top
+    padding-top 80px
+
+  .screen-work-bottom
+    padding 70px 0 40px
+
+  .arrow-up
+    top -40px
+    &.arrow-up-center
+      left 0
+      right 0
+    &.arrow-up-left
+      left 14%
+    &.arrow-up-right
+      right 14%
+
+  .work-steps
+    flex-direction row
+    width 80%
+    margin auto
+    padding 80px 0
+
+  .work-step
+    align-items center
+    justify-content center
+    width 170px
+    height 170px
+    font-size 90px
+    color colorWhite
+    cursor pointer
+    background #c8c8c8
+    &:nth-of-type(1)
+    &:nth-of-type(3)
+      &:after
+        content ""
+        position absolute
+        top calc(50% - 32px/2)
+        right calc(-134px - 38px)
+        background url("../assets/images/icons/arrow.png") no-repeat center
+        background-size 134px
+        width 134px
+        height 32px
+        transform none
+    &:nth-of-type(3)
+      &:after
+        left calc(-134px - 38px)
+    &.swiper-pagination-bullet-active
+      color transparent
+      &:nth-of-type(1)
+        &:after
+          background-size 134px
+      &:nth-of-type(3)
+        &:after
+          background-size 134px
+
+  .work-number
+    font-size 103px
+    margin-right 65px
+
+  .work-text
+    font-size 25px
+    line-height 1.33
+    margin-left 0
+    & + .small
+      margin 46px 0 0
+
+  .nav-prev
+  .nav-next
+    width 39px
+    height 73px
+
+  .nav-prev
+    left -100px
+
+  .nav-next
+    right -100px
+
+  .title
+    font-size 63px
+
+  .screen-app
+    padding 86px 0
+
+  .app-text
+    font-size 25px
+
+  .store-badge
+    height 56px
+
+  .app
+    margin 95px 0 60px
+
+  .app-option
+    position relative
+    font-size 23px
+    line-height 1.35
+    text-align left
+    margin-bottom 40px
+    margin-top 0
+    overflow hidden
+
+  .option-title
+    font-size 25px
+
+  .option-sticker
+    display inline-block
+    font-size 25px
+    color colorWhite
+    text-transform uppercase
+    background colorRed
+    border-radius 3px
+    margin-left 14px
+    padding 1px 10px
+
+  .swiper-app-pagination
+    &.swiper-pagination-bullets
+      bottom 32%
+
+  .screen-callback
+    background #f3f3f3
+    padding 98px 0
+    .title
+      margin-bottom 50px
+
+  .callback-text
+    font-size 23px
+    line-height 1.4
+    margin-bottom 55px
+
+  .callback-success
+    .title
+      margin-top 40px
+
+  .form-small
+    font-size 20px
+    margin-top 0
+
+  .form-group
+    margin-bottom 30px
+
+  .form-control
+    height 63px
+    font-size 23px
+    padding 20px 32px
+
+  .btn-form
+    margin-top 75px
+
+  footer
+  .footer
+    padding 34px 0 100px
+
+  .footer-top
+    padding-bottom 54px
+    margin-bottom 54px
+    margin-top 0
+    border-bottom 6px solid rgba(255,255,255,0.2)
+    text-align right
+
+  .footer-logo
+    display inline-block
+    max-width 174px
+    margin-right 100px
+
+  .social-icon
+    width 41px
+
+  .footer-phone
+    font-size 25px
+    margin-right 28px
+    margin-bottom 0
+
+  .footer-text
+    display inline-block
+    font-size 16px
+    opacity 0.4
+
+  .modal-xl
+    max-width 78%
+
+  button.close
+    top 36px
+    right 32px
+    width 22px
+    height 22px
+
+  .modal-body
+    padding 0 0 50px
+
+  .item-wrapper
+    width 100%
+
+  .item-img
+    max-height 500px
+    margin-bottom 0
+
+  .item-title
+    font-size 33px
+    margin-bottom 26px
+
+  .item-description
+    font-size 23px
+
+  .item-thumbnail
+    width 148px
+    height 148px
+    padding 20px
+    margin 16px
+
+  .tab-items
+    height 583px
+
+//1200px
+@media (width: 1200px)
+  .header-logo
+    max-width 184px
+    margin-right 62px
+
+  .header-phone
+    font-size 28px
+    margin-right 65px
+
+  .link-order
+    font-size 28px
+
+  .arrow-up
+    &.arrow-up-left
+      left 14.5%
+    &.arrow-up-right
+      right 14.5%
+
+  .store-badge
+    height 38px
+
+  .item-thumbnail
+    width 116px
+    height 116px
+    padding 14px
+    margin 8px
+
+//1024 arrow position
+@media (width: 1024px)
+  .arrow-up
+    &.arrow-up-left
+      left 18%
+    &.arrow-up-right
+      right 18%
+
+//1366 arrow position
+@media (min-width: 1366px)
+  .arrow-up
+    &.arrow-up-left
+      left 14%
+    &.arrow-up-right
+      right 14%
+
+// 1440px and up
+@media (min-width: 1440px)
+  .work-steps
+    width 65%
+
+  .arrow-up
+    &.arrow-up-left
+      left 21.5%
+    &.arrow-up-right
+      right 21.5%
+
+//1920
+@media (min-width: 1650px)
+  .arrow-up
+    &.arrow-up-left
+      left 24%
+    &.arrow-up-right
+      right 24%
