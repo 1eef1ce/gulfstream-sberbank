@@ -84,7 +84,6 @@ header
 
 .icon-phone
   position absolute
-  z-index 10
   top 32px
   right 32px
   background url("../assets/images/icons/icon_phone.png") no-repeat center
@@ -112,78 +111,25 @@ header
     color colorRed
     text-decoration underline
 
-.swiper-top
-  max-height 621px
-  height 80vh
-  .swiper-slide
-    padding-bottom 35px
-    background-repeat no-repeat
-    background-position center
-    background-size cover
-
-.slide1
-  background url("../assets/images/slide1.jpg")
-
-.slide2
-  background url("../assets/images/slide2.jpg")
-
-.slide3
-  background url("../assets/images/slide3.jpg")
-
-.slide4
-  background url("../assets/images/slide4.jpg")
-
-.swiper-top-pagination
-  &.swiper-pagination-bullets
-    position absolute
-    bottom 22%
-    left 0
-    right 0
-    z-index 100
-    margin auto
-    display flex
-    justify-content space-between
-    width 70px
-    outline none
-
-.top-bullet
-  width 7px
-  height 7px
-  border-radius 100%
-  background #8f8f8f
-  cursor pointer
-  &:focus
-    outline none
-
-.top-bullet-active
-  box-sizing border-box
-  background #fff
-  border-radius 100%
-  box-shadow 0 0 0 2px #8f8f8f,
-  0 0 0 3px #fff
+.screen-top
+  background url("../assets/images/bg_top_375.jpg") no-repeat center
+  background-size cover
+  height 620px
+  padding-bottom 48px
 
 .top-title
-  font-family fontLight
-  font-size 25px
-  line-height normal
-  color #999
+  font-family fontBold
+  font-size 24px
+  color colorWhite
   text-align center
   letter-spacing -0.05em
-  text-transform uppercase
-  margin-bottom 16px
-
-.top-bold
-  font-family fontBold
-  color colorWhite
+  margin-bottom 6px
 
 .top-text
-  font-family fontRegular
-  font-size 12.5px
-  line-height normal
+  font-size 13px
   color colorWhite
   text-align center
-  letter-spacing -0.05em
-  margin-bottom 64px
+  margin-bottom 32px
 
 .btn
   font-size 23px
@@ -200,148 +146,66 @@ header
     opacity 0.4
 
 .screen-sets
-  background colorWhite url("../assets/images/bg_shadow.png") no-repeat left top
+  background colorWhite
   color colorLightGrey
-  padding-top 40px
 
 .set
-  margin-bottom 60px
-  .btn
-    margin-bottom 60px
+  margin-top 44px
+
+.set-title-wrapper
+  display block
 
 .set-title
-  font-family fontLight
-  font-size 22px
-  line-height 1.4
-  color colorGrey
-  text-transform uppercase
-  letter-spacing -0.02em
-
-.set-bold
-  font-family fontBold
-
-.divider
-  width 83px
-  height 3px
-  background #27a93a
-  margin 10px 0 30px
-
-.set-prices
-  display flex
-  position relative
-//  margin-bottom 30px
-
-.prices-discount
-  position absolute
-  top 0
-  right -10px
-  background url("../assets/images/icons/icon_discount.png") no-repeat center
-  background-size contain
-  width 36px
   height 36px
 
+.divider
+  height 1px
+  width 100%
+  background #d4d4d4
+  margin 20px 0
+
+.set-description
+  font-size 16px
+  line-height 1.42
+  margin-bottom 16px
+
+.small
+  font-size 10px
+  margin-bottom 22px
+
+.set-prices
+  display table
+  width 100%
+  margin-bottom 40px
+
 .prices-group
-  display flex
-  flex-direction column
+  display table-row
   font-family fontBold
-  font-size 13px
-  line-height 1.5
+  font-size 15px
+  line-height 1.1
   color colorGrey
-  letter-spacing -0.01em
   > div
-    display inline-block
-    margin-bottom 16px
+    display table-cell
+    width 50%
+    padding-left 18px
 
 .price
   font-family fontRegular
-  font-size 25px
-  line-height 1.05
-  margin-left 15px
-  &:first-of-type
-    margin-left -10%
-
-.price-regular
-  display inline-block
-  text-decoration line-through
-  text-decoration-color rgba(73,73,87,0.5)
-
-.price-discounted
-  display inline-block
-  color #da2128
+  font-size 27px
+  padding-top 5px
 
 .sign-rouble
   font-family PTRoubleSans
-  font-size 24px
+  font-size 25px
 
 .set-img-wrapper
   position relative
 
 .set-img
   margin-bottom 16px
-  pointer-events none
-  user-select none
-
-.set-icons
-  display flex
-  align-items center
-  justify-content center
-  margin-bottom 27px
-
-.set-icon
-  width 39px
-  height 39px
-  margin 0 6px
-
-.set-option
-  padding 8px 8px 20px 0
-
-.set-option-show
-  background #fff
-  box-shadow 11px 0 106px rgba(34,25,31,0.15)
-  margin-bottom 20px
-
-.set-option-header
-  display inline-flex
-  align-items center
-  cursor pointer
-
-.set-option-icon
-  width 50px
-  img
-    max-width 30px
-    max-height 30px
-
-.set-option-arrow
-  background url("../assets/images/icons/arrow_down.png") no-repeat center
-  background-size contain
-  width 10px
-  height 6px
-  margin-left 8px
-
-.set-option-arrow-opened
-  display none
-  background url("../assets/images/icons/arrow_up.png") no-repeat center
-  background-size contain
-  width 12px
-  height 8px
-  float right
-  margin-top 10px
-
-.set-option-title
-  font-family fontRegular
-  font-size 15px
-  color colorGrey
-  border-bottom 1px solid #c9c9cd
-
-.set-option-description
-  font-family fontLight
-  font-size 12.5px
-  color colorGrey
-  line-height 1.25
-  letter-spacing 0.025em
-  margin-left 50px
 
 .screen-work-top
+  padding-top 80px
   background colorWhite
 
 .screen-work-bottom
@@ -443,10 +307,6 @@ header
   line-height 1.54
   margin-left 22px
 
-.small
-  font-size 10px
-  margin-bottom 22px
-
 .swiper-button-disabled
   display none
 
@@ -462,6 +322,12 @@ header
   padding 0 0 40px
   color colorBlack
 
+.app-text
+  font-size 14px
+  line-height 1.3
+  margin-top 24px
+  text-align center
+
 .app-mobile
   margin 20px 0 0
 
@@ -476,7 +342,7 @@ header
     margin-bottom 0
   &:hover
     color colorRed
-    .app-option-title
+    .option-title
       color colorRed
 
 .swiper-app
@@ -529,17 +395,17 @@ header
   box-shadow 0 0 0 2px #ffffff,
              0 0 0 3px #505965
 
-.app-option-title
+.option-title
   display inline-block
   font-family fontBold
   color colorDarkGrey
 
-.app-option-special
+.option-special
   color colorRed
-  .app-option-title
+  .option-title
     color colorRed
 
-.app-option-img
+.option-img
   display none
   &:first-of-type
     display inline-block
@@ -558,7 +424,7 @@ header
   margin-bottom 30px
 
 .callback-success
-//  display none
+  display none
   .title
     margin-top 20px
 
@@ -700,445 +566,452 @@ button.close
 
 //**Popovers**//
 .dot
-  width 9px
-  height 9px
-  border-radius 100%
-  background-color colorRed
-  border 2px solid colorWhite
-  box-shadow 2px 2px 4px 2px rgba(27,27,28,0.21)
+//  border 1px solid blue
+  width 30px
+  height 30px
   position absolute
   cursor pointer
-  &:hover
-  &:focus
-    transform scale(1.2)
+/**
+.popover
+  font-family fontLight
+  color colorBlack
+  border 0
+  border-radius 4px
+  background colorWhite
+  box-shadow 0 0 10px rgba(0,0,0,0.5)
+  margin 0
 
+.popover .arrow
+  display none
+
+.popover-header
+  background colorWhite
+  text-transform uppercase
+  font-size 10px
+  border 0
+  padding 5px
+
+.popover-body
+  font-size 10px
+  padding 0 5px 5px
+**/
 .d-water
-  top 75px
-  left 20px
+  top 63px
+  left 11px
 .d-air
-  top 75px
-  left 73px
+  top 63px
+  left 59px
 .d-smoke
-  top 35px
-  left 177px
+  top 30px
+  left 137px
 .d-panel-life
-  top 6px
-  left 208px
+  top 0px
+  left 169px
 .d-phone-life
-  top 34px
-  left 234px
+  top 28px
+  left 190px
+.d-sign-life
+  top 55px
+  left 227px
 .d-door
-  top 58px
-  left 24px
+  top 52px
+  left 17px
 .d-motion
-  top 45px
-  left 83px
+  top 46px
+  left 64px
 .d-keyboard
-  top 24px
-  left 144px
+  top 22px
+  left 128px
 .d-panel-home
-  top 4px
-  left 189px
+  top 0px
+  left 177px
 .d-phone-home
-  top 34px
-  left 201px
+  top 32px
+  left 184px
 .d-sign-home
-  top 59px
-  left 216px
+  top 61px
+  left 222px
 .d-keys
-  top 102px
-  left 139px
+  top 104px
+  left 137px
 
 @media (min-width: 375px)
   .d-water
-    top 92px
-    left 25px
+    top 78px
+    left 11px
   .d-air
-    top 92px
-    left 87px
+    top 78px
+    left 70px
   .d-smoke
-    top 42px
-    left 211px
+    top 36px
+    left 178px
   .d-panel-life
-    top 9px
-    left 252px
+    top 0px
+    left 211px
   .d-phone-life
-    top 44px
-    left 284px
+    top 33px
+    left 235px
+  .d-sign-life
+    top 65px
+    left 275px
   .d-door
-    top 70px
+    top 63px
     left 26px
   .d-motion
     top 55px
-    left 100px
+    left 83px
   .d-keyboard
-    top 29px
-    left 175px
+    top 26px
+    left 161px
   .d-panel-home
-    top 5px
-    left 230px
+    top 0px
+    left 217px
   .d-phone-home
-    top 43px
-    left 245px
+    top 39px
+    left 228px
   .d-sign-home
-    top 72px
-    left 262px
+    top 74px
+    left 267px
   .d-keys
-    top 126px
-    left 169px
+    top 128px
+    left 165px
 
 @media (min-width: 425px)
   .d-water
-    top 107px
-    left 27px
+    top 90px
+    left 11px
   .d-air
-    top 107px
-    left 100px
+    top 90px
+    left 80px
   .d-smoke
-    top 48px
-    left 243px
+    top 42px
+    left 207px
   .d-panel-life
-    top 10px
-    left 292px
+    top 0px
+    left 247px
   .d-phone-life
-    top 51px
-    left 329px
+    top 40px
+    left 277px
+  .d-sign-life
+    top 75px
+    left 316px
   .d-door
-    top 82px
-    left 32px
+    top 74px
+    left 26px
   .d-motion
-    top 64px
-    left 116px
+    top 63px
+    left 99px
   .d-keyboard
-    top 34px
-    left 205px
+    top 32px
+    left 190px
   .d-panel-home
-    top 6px
-    left 266px
+    top 0px
+    left 254px
   .d-phone-home
-    top 49px
-    left 285px
+    top 45px
+    left 268px
   .d-sign-home
-    top 85px
-    left 303px
+    top 86px
+    left 307px
   .d-keys
-    top 147px
-    left 195px
+    top 149px
+    left 190px
 
 @media (min-width: 576px)
+/**
+  .popover-header
+    background colorWhite
+    text-transform uppercase
+    font-size 16px
+    border 0
+    padding 16px 14px
+
+  .popover-body
+    font-size 14px
+    padding 0 14px 16px
+**/
   .d-water
-    top 140px
-    left 36px
+    top 119px
+    left 13px
   .d-air
-    top 140px
-    left 131px
+    top 119px
+    left 104px
   .d-smoke
-    top 65px
-    left 323px
+    top 55px
+    left 275px
   .d-panel-life
-    top 14px
-    left 387px
+    top 0px
+    left 332px
   .d-phone-life
-    top 65px
-    left 435px
+    top 52px
+    left 372px
+  .d-sign-life
+    top 98px
+    left 414px
   .d-door
-    top 105px
-    left 42px
+    top 100px
+    left 40px
   .d-motion
     top 84px
-    left 151px
+    left 137px
   .d-keyboard
-    top 45px
-    left 270px
+    top 42px
+    left 257px
   .d-panel-home
-    top 6px
-    left 352px
+    top 0px
+    left 340px
   .d-phone-home
-    top 64px
-    left 376px
+    top 60px
+    left 361px
   .d-sign-home
-    top 112px
-    left 399px
+    top 113px
+    left 402px
   .d-keys
     top 195px
-    left 257px
+    left 250px
 
 @media (min-width: 768px)
-  .dot
-    width 10px
-    height 10px
-
   .d-water
-    top 200px
-    left 46px
+    top 170px
+    left 16px
   .d-air
-    top 200px
-    left 178px
+    top 170px
+    left 140px
   .d-smoke
-    top 92px
-    left 450px
+    top 77px
+    left 387px
   .d-panel-life
-    top 18px
-    left 534px
+    top 5px
+    left 460px
   .d-phone-life
-    top 90px
-    left 599px
+    top 76px
+    left 522px
+  .d-sign-life
+    top 133px
+    left 565px
   .d-door
     top 144px
-    left 56px
+    left 53px
   .d-motion
     top 115px
-    left 205px
+    left 196px
   .d-keyboard
-    top 62px
-    left 371px
-  .d-panel-home
-    top 10px
-    left 485px
-  .d-phone-home
-    top 88px
-    left 515px
-  .d-sign-home
-    top 155px
-    left 549px
-  .d-keys
-    top 268px
-    left 353px
-
-@media (min-width: 960px)
-  .dot
-    width 11px
-    height 11px
-
-  .d-water
-    top 120px
-    left 30px
-  .d-air
-    top 120px
-    left 110px
-  .d-smoke
-    top 55px
-    left 269px
-  .d-panel-life
-    top 12px
-    left 324px
-  .d-phone-life
-    top 55px
-    left 365px
-  .d-door
-    top 89px
-    left 35px
-  .d-motion
-    top 70px
-    left 127px
-  .d-keyboard
-    top 38px
-    left 226px
-  .d-panel-home
-    top 6px
-    left 296px
-  .d-phone-home
-    top 55px
-    left 315px
-  .d-sign-home
-    top 93px
-    left 336px
-  .d-keys
-    top 164px
-    left 217px
-
-@media (min-width: 1200px)
-  .dot
-    width 15px
-    height 15px
-    border 3px solid colorWhite
-    box-shadow 2px 2px 5px 3px rgba(27,27,28,0.21)
-
-  .d-water
-    top 158px
-    left 44px
-  .d-air
-    top 158px
-    left 151px
-  .d-smoke
-    top 75px
-    left 368px
-  .d-panel-life
-    top 12px
-    left 436px
-  .d-phone-life
-    top 73px
-    left 488px
-  .d-door
-    top 117px
-    left 51px
-  .d-motion
-    top 93px
-    left 171px
-  .d-keyboard
-    top 53px
-    left 304px
+    top 61px
+    left 359px
   .d-panel-home
     top 8px
-    left 396px
+    left 471px
   .d-phone-home
-    top 71px
-    left 420px
+    top 86px
+    left 506px
   .d-sign-home
-    top 124px
-    left 450px
+    top 155px
+    left 550px
   .d-keys
-    top 216px
-    left 291px
+    top 268px
+    left 347px
 
-@media (min-width: 1280px)
+@media (min-width: 960px)
   .d-water
-    top 172px
-    left 47px
+    top 100px
+    left 13px
   .d-air
-    top 172px
-    left 162px
+    top 100px
+    left 88px
   .d-smoke
-    top 85px
-    left 399px
+    top 47px
+    left 223px
   .d-panel-life
-    top 15px
-    left 463px
+    top 2px
+    left 269px
   .d-phone-life
-    top 80px
-    left 520px
+    top 43px
+    left 305px
+  .d-sign-life
+    top 81px
+    left 343px
+  .d-door
+    top 81px
+    left 34px
+  .d-motion
+    top 69px
+    left 110px
+  .d-keyboard
+    top 34px
+    left 208px
+  .d-panel-home
+    top 2px
+    left 278px
+  .d-phone-home
+    top 49px
+    left 295px
+  .d-sign-home
+    top 93px
+    left 333px
+  .d-keys
+    top 161px
+    left 205px
+
+@media (min-width: 1200px)
+  .d-water
+    top 158px
+    left 20px
+  .d-air
+    top 158px
+    left 137px
+  .d-smoke
+    top 75px
+    left 362px
+  .d-panel-life
+    top 5px
+    left 433px
+  .d-phone-life
+    top 69px
+    left 491px
+  .d-sign-life
+    top 121px
+    left 517px
   .d-door
     top 135px
-    left 56px
+    left 53px
   .d-motion
-    top 101px
-    left 184px
+    top 110px
+    left 187px
   .d-keyboard
     top 56px
-    left 323px
+    left 339px
   .d-panel-home
-    top 10px
-    left 420px
+    top 7px
+    left 441px
   .d-phone-home
-    top 77px
-    left 449px
+    top 81px
+    left 475px
   .d-sign-home
-    top 131px
-    left 480px
+    top 145px
+    left 517px
   .d-keys
-    top 229px
-    left 311px
+    top 251px
+    left 327px
 
 @media (min-width: 1366px)
   .d-water
     top 184px
-    left 49px
+    left 23px
   .d-air
     top 184px
-    left 171px
+    left 156px
   .d-smoke
     top 85px
-    left 424px
+    left 417px
   .d-panel-life
-    top 15px
-    left 498px
+    top 7px
+    left 496px
   .d-phone-life
-    top 84px
-    left 558px
+    top 82px
+    left 565px
+  .d-sign-life
+    top 145px
+    left 618px
   .d-door
-    top 135px
-    left 56px
+    top 153px
+    left 62px
   .d-motion
-    top 107px
-    left 194px
+    top 125px
+    left 217px
   .d-keyboard
-    top 60px
-    left 347px
+    top 67px
+    left 390px
   .d-panel-home
-    top 10px
-    left 452px
+    top 9px
+    left 506px
   .d-phone-home
-    top 83px
-    left 481px
+    top 93px
+    left 545px
   .d-sign-home
-    top 142px
-    left 514px
+    top 166px
+    left 591px
   .d-keys
-    top 250px
-    left 332px
+    top 286px
+    left 375px
 
 @media (min-width: 1440px)
   .d-water
     top 198px
-    left 52px
+    left 23px
   .d-air
     top 198px
-    left 182px
+    left 164px
   .d-smoke
-    top 90px
-    left 449px
+    top 88px
+    left 440px
   .d-panel-life
-    top 18px
-    left 525px
+    top 7px
+    left 524px
   .d-phone-life
-    top 89px
-    left 589px
+    top 86px
+    left 596px
+  .d-sign-life
+    top 153px
+    left 652px
   .d-door
-    top 143px
-    left 60px
+    top 167px
+    left 62px
   .d-motion
-    top 114px
-    left 206px
+    top 133px
+    left 229px
   .d-keyboard
-    top 59px
-    left 369px
+    top 69px
+    left 412px
   .d-panel-home
-    top 9px
-    left 478px
+    top 10px
+    left 535px
   .d-phone-home
-    top 87px
-    left 509px
+    top 100px
+    left 576px
   .d-sign-home
-    top 150px
-    left 544px
+    top 175px
+    left 622px
   .d-keys
-    top 264px
-    left 351px
+    top 303px
+    left 395px
 
 @media (min-width: 1650px)
   .d-water
-    top 220px
-    left 58px
+    top 210px
+    left 55px
   .d-air
-    top 220px
+    top 210px
     left 208px
   .d-smoke
-    top 105px
-    left 512px
+    top 94px
+    left 514px
   .d-panel-life
-    top 21px
-    left 607px
+    top 9px
+    left 603px
   .d-phone-life
-    top 103px
-    left 677px
+    top 94px
+    left 681px
+  .d-sign-life
+    top 163px
+    left 726px
   .d-door
-    top 165px
-    left 67px
+    top 177px
+    left 105px
   .d-motion
-    top 132px
-    left 238px
+    top 140px
+    left 286px
   .d-keyboard
-    top 72px
-    left 422px
+    top 77px
+    left 481px
   .d-panel-home
     top 13px
-    left 549px
+    left 613px
   .d-phone-home
-    top 99px
-    left 585px
+    top 108px
+    left 658px
   .d-sign-home
-    top 174px
-    left 625px
+    top 188px
+    left 706px
   .d-keys
-    top 303px
-    left 403px
+    top 327px
+    left 463px

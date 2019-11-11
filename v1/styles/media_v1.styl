@@ -10,6 +10,10 @@ colorDarkGrey = #2a2d2e
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px)
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+
   .work-step-wrapper
     &:nth-of-type(1)
     &:nth-of-type(3)
@@ -38,25 +42,13 @@ colorDarkGrey = #2a2d2e
     max-width 400px
     margin auto
 
-  .slide1
-    background url("../assets/images/slide1_1024.jpg")
-
-  .slide2
-    background url("../assets/images/slide2_1024.jpg")
-
-  .slide3
-    background url("../assets/images/slide3_1024.jpg")
-
-  .slide4
-    background url("../assets/images/slide4_1024.jpg")
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 960px)
   body
     font-size 15px
 
   .container
-    max-width 879px
+    max-width 865px
     padding 0
 
   header
@@ -74,28 +66,19 @@ colorDarkGrey = #2a2d2e
   .link-order
     font-size 19px
 
-  .swiper-top
-    max-height 534px
-    height 75vh
-    .swiper-slide
-      padding-bottom 60px
-
-  .swiper-top-pagination
-    &.swiper-pagination-bullets
-      bottom 25%
-      left auto
-      right 46px
-      flex-direction column
-      width auto
-      height 70px
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+    height 407px
+    padding-bottom 36px
 
   .top-title
-    font-size 36px
-    margin-bottom 20px
+    font-size 43px
+    margin-bottom 10px
 
   .top-text
-    font-size 16px
-    margin-bottom 28px
+    font-size 15px
+    margin-bottom 25px
 
   .btn
     font-size 19px
@@ -103,66 +86,50 @@ colorDarkGrey = #2a2d2e
     padding 14px
     border-radius 4px
 
-  .screen-sets
-    background colorWhite url("../assets/images/bg_shadow_1024.png") no-repeat left top
-    padding-top 80px
-
   .set
-    margin-bottom 86px
-    .btn
-      margin-bottom 0
+    margin-top 40px
+    align-items center
 
-  .set-wrapper
-    margin 0 30px 0 -30px
+  .set-title
+    height 35px
+    margin 0
 
   .divider
-    margin 10px 0 15px
+    height 1px
+    width 90%
+    margin 24px 0
+
+  .set-description
+    font-size 15px
+    line-height 1.34
+    margin-bottom 20px
 
   .set-prices
-    display table
-    width 100%
     margin-bottom 0
 
-  .prices-discount
-    right 60%
-    width 45px
-    height 45px
+  .small
+    font-size 11px
 
   .prices-group
-    display table-row
-    width 100%
-    font-size 16px
-    &:first-of-type
-      width 100%
+    font-size 15px
+    line-height 1.5
     > div
-      display table-cell
-      margin-bottom 0
+      padding-left 0
 
   .price
-    font-size 27px
-    margin-left 0
-    &:first-of-type
-      margin-left 0
+    font-size 29px
+    padding-top 0
 
   .sign-rouble
-    font-size 26px
-
-  .set-icons
-    margin-bottom 16px
-
-  .set-option
-    padding 5px 11px 15px 0
-
-  .set-option-show
-    margin-bottom 12px
-
-  .set-option-description
-    font-size 9.5px
+    font-size 27px
 
   .set-img
     width 100%
     max-width 420px
-    margin-bottom 20px
+    margin-bottom 24px
+
+  .screen-work-top
+    padding-top 90px
 
   .screen-work-bottom
     padding 40px 0 20px
@@ -219,9 +186,6 @@ colorDarkGrey = #2a2d2e
     & + .small
       margin 20px 0 0
 
-  .small
-    font-size 11px
-
   .nav-prev
   .nav-next
     position absolute
@@ -246,6 +210,9 @@ colorDarkGrey = #2a2d2e
 
   .screen-app
     padding 75px 0 50px
+
+  .app-text
+    font-size 15px
 
   .store-badge
     height 31px
@@ -378,7 +345,7 @@ colorDarkGrey = #2a2d2e
     font-size 24px
 
   .container
-    max-width 1648px
+    max-width 1688px
     padding 0 14px
 
   .row
@@ -389,95 +356,87 @@ colorDarkGrey = #2a2d2e
     padding-left 14px
     padding-right 14px
 
+  header
+  .header
+    padding 30px 50px 30px 90px
+
+  .header-logo
+    max-width 234px
+    margin-right 72px
+
+  .header-phone
+    font-size 33px
+    margin-right 85px
+
+  .link-order
+    font-size 33px
+
+  .screen-top
+    background url("../assets/images/bg_top.jpg") no-repeat left center
+    background-size cover
+    height 764px
+    padding-bottom 134px
+
+  .top-title
+    font-size 69px
+    margin-bottom 20px
+
+  .top-text
+    font-size 25px
+    margin-bottom 50px
+
   .btn
     font-size 29px
     width 291px
     padding 20px
     border-radius 6px
-    .screen-top &
-      font-size 19px
-      width 191px
-      padding 14px
-      border-radius 4px
-
-
-  .screen-sets
-    background colorWhite url("../assets/images/bg_shadow_1920.png") no-repeat left top
-    padding-top 170px
 
   .set
-    margin-bottom 148px
+    margin-top 112px
 
-  .set-wrapper
-    margin 0
+  .set-title-wrapper
+    display inline-block
 
   .set-title
-    font-size 36px
+    height 52px
+    margin 0
 
   .divider
-    width 123px
-    height 5px
-    margin 5px 0 20px
+    height 1px
+    width 90%
+    margin 40px 0
 
-  .prices-discount
-    right 50%
-    width 63px
-    height 63px
+  .set-description
+    font-size 22px
+    line-height 1.375
+    margin-bottom 26px
+
+  .set-prices
+    margin-bottom 0
+
+  .small
+    font-size 17px
 
   .prices-group
     font-size 23px
+    line-height 1.5
+    > div
+      padding 0
 
   .price
-    font-size 40px
+    font-size 44px
+    padding-top 15px
 
   .sign-rouble
-    font-size 39px
-
-  .set-img
-    margin-bottom 10px
-
-  .set-icons
-    margin-bottom 23px
-
-  .set-icon
-    width 58px
-    height 58px
-    margin 0 8px
-
-  .set-options
-    margin-bottom 20px
-
-  .set-option
-    padding 8px 18px 20px 0
-
-  .set-option-show
-    margin-bottom 20px
-
-  .set-option-icon
-    width 70px
-    img
-      max-width none
-      max-height none
-
-  .set-option-arrow
-    width 15px
-    height 9px
-
-  .set-option-arrow-opened
-    width 17px
-    height 11px
-
-  .set-option-title
-    font-size 23px
-
-  .set-option-description
-    font-size 14px
-    margin-left 70px
+    font-size 42px
 
   .set-img
     width 100%
-    max-width 769px
-    margin-bottom 10px
+    max-width 800px
+    margin-bottom 24px
+
+  .screen-work-top
+    padding-top 80px
 
   .screen-work-bottom
     padding 70px 0 40px
@@ -542,9 +501,6 @@ colorDarkGrey = #2a2d2e
     & + .small
       margin 46px 0 0
 
-  .small
-    font-size 17px
-
   .nav-prev
   .nav-next
     width 39px
@@ -561,6 +517,9 @@ colorDarkGrey = #2a2d2e
 
   .screen-app
     padding 86px 0
+
+  .app-text
+    font-size 25px
 
   .store-badge
     height 56px
@@ -689,6 +648,17 @@ colorDarkGrey = #2a2d2e
 
 //1200px
 @media (width: 1200px)
+  .header-logo
+    max-width 184px
+    margin-right 62px
+
+  .header-phone
+    font-size 28px
+    margin-right 65px
+
+  .link-order
+    font-size 28px
+
   .arrow-up
     &.arrow-up-left
       left 14.5%
@@ -722,64 +692,6 @@ colorDarkGrey = #2a2d2e
 
 // 1440px and up
 @media (min-width: 1440px)
-  header
-  .header
-    padding 30px 50px 30px 90px
-
-  .header-logo
-    max-width 234px
-    margin-right 72px
-
-  .header-phone
-    font-size 33px
-    margin-right 85px
-
-  .link-order
-    font-size 33px
-
-  .swiper-top
-    max-height 843px
-    height 80vh
-    .swiper-slide
-      padding-bottom 76px
-
-  .slide1
-    background url("../assets/images/slide1_1920.jpg")
-
-  .slide2
-    background url("../assets/images/slide2_1920.jpg")
-
-  .slide3
-    background url("../assets/images/slide3_1920.jpg")
-
-  .slide4
-    background url("../assets/images/slide4_1920.jpg")
-
-  .swiper-top-pagination
-    &.swiper-pagination-bullets
-      bottom 25%
-      right 65px
-      height 100px
-
-  .top-bullet
-    width 10px
-    height 10px
-
-  .top-title
-    font-size 55px
-    margin-bottom 40px
-
-  .top-text
-    font-size 26px
-    margin-bottom 50px
-
-  .btn
-    .screen-top &
-      font-size 29px
-      width 291px
-      padding 20px
-      border-radius 6px
-
   .work-steps
     width 65%
 
@@ -791,9 +703,6 @@ colorDarkGrey = #2a2d2e
 
 //1920
 @media (min-width: 1650px)
-  .prices-discount
-    right 61%
-
   .arrow-up
     &.arrow-up-left
       left 24%

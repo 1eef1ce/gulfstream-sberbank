@@ -4,6 +4,17 @@ $( document ).ready(function() {
         $('.feedback-wrapper').hide();
     }
 
+    $('.set-option').on('show.bs.collapse', function () {
+        $(this).addClass('set-option-show');
+        $(this).find('.set-option-arrow').hide();
+        $(this).find('.set-option-arrow-opened').show();
+    })
+    $('.set-option').on('hide.bs.collapse', function () {
+        $(this).removeClass('set-option-show');
+        $(this).find('.set-option-arrow').show();
+        $(this).find('.set-option-arrow-opened').hide();
+    });
+
     $(function() {
         $('.set-life span').on('click', function() {
             var tab = $(this).index();
@@ -81,6 +92,24 @@ $( document ).ready(function() {
             bulletClass: 'app-bullet',
             bulletActiveClass: 'app-bullet-active'
         },
+    });
+
+    swiperMain = new Swiper('.swiper-top', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: '.swiper-top-pagination',
+            clickable: true,
+            bulletClass: 'top-bullet',
+            bulletActiveClass: 'top-bullet-active'
+        },
+        breakpoints: {
+            1024: {
+                direction: 'vertical',
+            },
+        }
     });
 
     var inputs = $('input[type="text"]');
